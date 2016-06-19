@@ -1,0 +1,107 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.championify.championify.BuildsAndCountersFragment"
+    android:background="#232323">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/img_hidesearch_fragbuildscounters"
+        android:background="#232323" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_welcome_fragbuildscounters"
+        android:id="@+id/tv_welcome_fragbuildscounters"
+        android:textStyle="bold"
+        android:textSize="16dp"
+        android:textColor="#006e9e"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:layout_above="@+id/tv_appstart_instructions_fragbuildscounters"
+        android:layout_marginBottom="20dp" />
+
+    <TextView
+        android:layout_width="310dp"
+        android:layout_height="wrap_content"
+        android:text="@string/tv_appstart_instructions_fragbuildscounters"
+        android:id="@+id/tv_appstart_instructions_fragbuildscounters"
+        android:textColor="#006e9e"
+        android:gravity="center"
+        android:textSize="14dp"
+        android:textStyle="italic"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/rv_champions_builds"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/custom_scroll_thumb_style"
+        android:scrollbarTrackVertical="@drawable/custom_scroll_track_style"
+        android:scrollbarSize="5dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:alpha="0"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/img_hidesearch_fragbuildscounters"
+        android:layout_toEndOf="@+id/img_hidesearch_fragbuildscounters">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="35dp"
+            android:id="@+id/et_search_fragbuildscounters"
+            android:text="@string/et_search_fragbuildscounters"
+            android:textColor="#d5d5d5"
+            android:singleLine="true"
+            android:layout_weight="1"
+            android:background="#b4232323"
+            android:layout_marginLeft="8dp"
+            android:capitalize="words"
+            android:hint="Search by name..."
+            android:textColorHint="#b7b7b7"
+            android:textSize="22dp"
+            android:textStyle="italic"
+            android:paddingLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="5dp" />
+
+        <Button
+            android:layout_width="90dp"
+            android:layout_height="40dp"
+            android:text="@string/btn_search_fragbuildscounters"
+            android:id="@+id/btn_search_fragbuildscounters"
+            android:layout_weight="1"
+            android:background="@drawable/ic_search"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:layout_marginRight="5dp" />
+
+    </LinearLayout>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_dismiss_welcome_fragbuildscounters"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:background="#00ffffff" />
+
+</RelativeLayout>

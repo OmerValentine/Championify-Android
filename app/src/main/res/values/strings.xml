@@ -1,0 +1,91 @@
+<resources>
+    <string name="app_name">Championify</string>
+
+    //Menu
+    <string name="action_donate" />
+    <string name="action_spelltimers" />
+    <string name="action_serverstatus">Server Status</string>
+
+    //Builds and Counters Fragment
+    <string name="tv_champion_name_fragbuilds">Name</string>
+    <string name="tv_welcome_fragbuildscounters">Welcome to Championify!</string>
+    <string name="tv_appstart_instructions_fragbuildscounters">To look up champion builds, abilities or counters, select a champion or use the search. \n To get the full list of champs run an empty search \n To get a list of ban rates, swipe to the right screen \n \n Click me to dismiss!</string>
+
+    //Builds Activity
+    <string name="tv_champion_name_actbuilds">Name</string>
+    <string name="tv_champion_title_actbuilds">Title</string>
+    <string name="tv_champion_primaryrole_actbuilds">Primary/</string>
+    <string name="tv_champion_secondaryrole_actbuilds">Secondary</string>
+    <string name="tv_abilities_order_wins_actbuilds">Most Wins: </string>
+    <string name="tv_abilities_order_frequent_actbuilds">Most Frequent: </string>
+    <string name="tv_items_wins_actbuilds">Most Wins:</string>
+    <string name="tv_items_frequent_actbuilds">Most Frequent:</string>
+    <string name="tv_abilities_order_actbuilds"><![CDATA[QWE]]></string>
+    <string name="tv_buildsandabilities_actbuilds">BUILDS / ABILITIES</string>
+
+    //Ban Rates Item List Fragment
+    <string name="tv_champion_name_fragbanrates">Name</string>
+    <string name="tv_champion_role_fragbanrates">Role</string>
+    <string name="tv_champion_banrate_fragbanrates">99%</string>
+    <string name="tv_champion_winrate_fragbanrates">99%</string>
+    <string name="tv_champion_playrate_fragbanrates">99%</string>
+    <string name="tv_champion_kda_fragbanrates">K/D/A</string>
+    <string name="tv_banrate_fragbanrates">ban rate</string>
+    <string name="tv_winrate_fragbanrates">win rate</string>
+    <string name="tv_playrate_fragbanrates">play rate</string>
+    <string name="tv_kda_fragbanrates">k.d.a:</string>
+
+    //Counters Activity
+    <string name="btn_champion_role_top_actcounters">Top</string>
+    <string name="btn_champion_role_jungle_actcounters">Jun</string>
+    <string name="btn_champion_role_mid_actcounters">Mid</string>
+    <string name="btn_champion_role_support_actcounters">Sup</string>
+    <string name="btn_champion_role_adc_actcounters">ADC</string>
+    <string name="tv_champion_name_actcounters">Name</string>
+    <string name="tv_statscore_actcounters">stat score</string>
+    <string name="tv_champion_winrate_actcounters">99%</string>
+    <string name="tv_champion_statscore_actcounters">99%</string>
+    <string name="tv_counters_actcounters">COUNTERS</string>
+    <string name="tv_counters_list_empty_view_actcounters">Play the meta n00b! \n \n Pick a role above to display counters in that lane \n and select whether you want to see strong against or weak against counters</string>
+    <string name="tv_strong_against_actcounters">Strong against:</string>
+    <string name="tv_weak_against_actcounters">Weak against:</string>
+    <string name="rb_strong_against_actcounters">Strong</string>
+    <string name="rb_weak_against_actcounters">Weak</string>
+    <string name="btn_view_champion_skins" />
+    <string name="btn_search_fragbuildscounters" />
+    <string name="et_search_fragbuildscounters" />
+
+    //Custom Dialog
+    <string name="btn_builds_dialog"><![CDATA[BUILDS & ABILITIES]]></string>
+    <string name="btn_counters_dialog">COUNTERS</string>
+
+    //Server Status Context Menu
+    <string name="tv_server_na_menu">North America Server Status</string>
+    <string name="tv_server_euw_menu">EU West Server Status</string>
+    <string name="tv_server_eune_menu">EU Nordic East Server Status</string>
+    <string name="tv_server_lan_menu">Latin America North Server Status</string>
+    <string name="tv_server_las_menu">Latin America South Server Status</string>
+    <string name="tv_server_br_menu">Brazil Server Status</string>
+    <string name="tv_server_tr_menu">Turkey Server Status</string>
+    <string name="tv_server_ru_menu">Russia Server Status</string>
+    <string name="tv_server_oce_menu">Oceania Server Status</string>
+    <string name="tv_server_jp_menu">Japan Server Status</string>
+
+    //Spell Timers Activity
+    <string name="tv_flash_clock_actspelltimers">0</string>
+    <string name="tv_ignite_clock_actspelltimers">0</string>
+    <string name="tv_heal_clock_actspelltimers">0</string>
+    <string name="tv_smite_clock_actspelltimers">0</string>
+    <string name="tv_teleport_clock_actspelltimers">0</string>
+    <string name="tv_ghost_clock_actspelltimers">0</string>
+    <string name="tv_exhaust_clock_actspelltimers">0</string>
+    <string name="tv_barrier_clock_actspelltimers">0</string>
+    <string name="tv_cleanse_clock_actspelltimers">0</string>
+    <string name="tv_clarity_clock_actspelltimers">0</string>
+    <string name="tv_mark_clock_actspelltimers">0</string>
+    <string name="btn_cancel_actspelltimers">Reset</string>
+
+    //Error Messages
+    <string name="championgg_error_message">Error: champion.gg API down</string>
+
+</resources>

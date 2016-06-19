@@ -1,0 +1,573 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.championify.championify.SpellTimersActivity"
+    android:background="#232323">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/ScrollView"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/custom_scroll_thumb_style"
+        android:scrollbarTrackVertical="@drawable/custom_scroll_track_style"
+        android:scrollbarSize="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/LinearLayoutFlash">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="82.5dp"
+                        android:layout_height="82.5dp"
+                        android:id="@+id/img_flash_actspelltimers"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentStart="false"
+                        android:background="@drawable/flash" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_flash_clock_actspelltimers"
+                        android:id="@+id/tv_flash_clock_actspelltimers"
+                        android:textSize="26dp"
+                        android:layout_alignTop="@+id/img_flash_actspelltimers"
+                        android:layout_alignRight="@+id/img_flash_actspelltimers"
+                        android:layout_alignLeft="@+id/img_flash_actspelltimers"
+                        android:layout_alignBottom="@+id/img_flash_actspelltimers"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:background="#64232323"
+                        android:textColor="#d5d5d5"
+                        android:visibility="gone"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/LinearLayoutIgnite"
+                android:layout_below="@+id/LinearLayoutFlash">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="82.5dp"
+                        android:layout_height="82.5dp"
+                        android:id="@+id/img_ignite_actspelltimers"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false"
+                        android:background="@drawable/ignite" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_ignite_clock_actspelltimers"
+                        android:id="@+id/tv_ignite_clock_actspelltimers"
+                        android:textSize="26dp"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:background="#64232323"
+                        android:textColor="#d5d5d5"
+                        android:layout_alignRight="@+id/img_ignite_actspelltimers"
+                        android:layout_alignBottom="@+id/img_ignite_actspelltimers"
+                        android:layout_alignTop="@+id/img_ignite_actspelltimers"
+                        android:layout_alignLeft="@+id/img_ignite_actspelltimers"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/LinearLayoutHeal"
+                android:layout_below="@+id/LinearLayoutIgnite">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="82.5dp"
+                        android:layout_height="82.5dp"
+                        android:id="@+id/img_heal_actspelltimers"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false"
+                        android:background="@drawable/heal" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_heal_clock_actspelltimers"
+                        android:id="@+id/tv_heal_clock_actspelltimers"
+                        android:textSize="26dp"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:background="#64232323"
+                        android:textColor="#d5d5d5"
+                        android:layout_alignRight="@+id/img_heal_actspelltimers"
+                        android:layout_alignTop="@+id/img_heal_actspelltimers"
+                        android:layout_alignLeft="@+id/img_heal_actspelltimers"
+                        android:layout_alignBottom="@+id/img_heal_actspelltimers"
+                        android:visibility="gone"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/LinearLayoutTeleport"
+                android:layout_below="@+id/LinearLayoutHeal">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="82.5dp"
+                        android:layout_height="82.5dp"
+                        android:id="@+id/img_teleport_actspelltimers"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false"
+                        android:background="@drawable/teleport" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_teleport_clock_actspelltimers"
+                        android:id="@+id/tv_teleport_clock_actspelltimers"
+                        android:textSize="26dp"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:background="#64232323"
+                        android:textColor="#d5d5d5"
+                        android:layout_alignLeft="@+id/img_teleport_actspelltimers"
+                        android:layout_alignRight="@+id/img_teleport_actspelltimers"
+                        android:layout_alignTop="@+id/img_teleport_actspelltimers"
+                        android:layout_alignBottom="@+id/img_teleport_actspelltimers"
+                        android:visibility="gone"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/LinearLayoutGhost"
+                android:layout_below="@+id/LinearLayoutTeleport">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="82.5dp"
+                        android:layout_height="82.5dp"
+                        android:id="@+id/img_ghost_actspelltimers"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false"
+                        android:background="@drawable/ghost" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_ghost_clock_actspelltimers"
+                        android:id="@+id/tv_ghost_clock_actspelltimers"
+                        android:textSize="26dp"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:background="#64232323"
+                        android:textColor="#d5d5d5"
+                        android:layout_alignRight="@+id/img_ghost_actspelltimers"
+                        android:layout_alignLeft="@+id/img_ghost_actspelltimers"
+                        android:layout_alignTop="@+id/img_ghost_actspelltimers"
+                        android:layout_alignBottom="@+id/img_ghost_actspelltimers"
+                        android:visibility="gone"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/LinearLayoutExhaust"
+                android:layout_below="@+id/LinearLayoutGhost">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="82.5dp"
+                        android:layout_height="82.5dp"
+                        android:id="@+id/img_exhaust_actspelltimers"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentStart="false"
+                        android:background="@drawable/exhaust" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_exhaust_clock_actspelltimers"
+                        android:id="@+id/tv_exhaust_clock_actspelltimers"
+                        android:textSize="26dp"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:background="#64232323"
+                        android:textColor="#d5d5d5"
+                        android:layout_alignLeft="@+id/img_exhaust_actspelltimers"
+                        android:layout_alignRight="@+id/img_exhaust_actspelltimers"
+                        android:layout_alignTop="@+id/img_exhaust_actspelltimers"
+                        android:layout_alignBottom="@+id/img_exhaust_actspelltimers"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/LinearLayoutBarrier"
+                android:layout_below="@+id/LinearLayoutExhaust">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="82.5dp"
+                        android:layout_height="82.5dp"
+                        android:id="@+id/img_barrier_actspelltimers"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentTop="false"
+                        android:layout_alignParentLeft="false"
+                        android:background="@drawable/barrier" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_barrier_clock_actspelltimers"
+                        android:id="@+id/tv_barrier_clock_actspelltimers"
+                        android:textSize="26dp"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:background="#64232323"
+                        android:textColor="#d5d5d5"
+                        android:layout_alignLeft="@+id/img_barrier_actspelltimers"
+                        android:layout_alignRight="@+id/img_barrier_actspelltimers"
+                        android:layout_alignTop="@+id/img_barrier_actspelltimers"
+                        android:layout_alignBottom="@+id/img_barrier_actspelltimers"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:id="@+id/LinearLayoutCleanse"
+                android:layout_below="@+id/LinearLayoutBarrier">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:gravity="center">
+
+                    <ImageView
+                        android:layout_width="82.5dp"
+                        android:layout_height="82.5dp"
+                        android:id="@+id/img_cleanse_actspelltimers"
+                        android:layout_alignParentLeft="false"
+                        android:layout_alignParentStart="false"
+                        android:layout_alignParentTop="false"
+                        android:background="@drawable/cleanse" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/tv_cleanse_clock_actspelltimers"
+                        android:id="@+id/tv_cleanse_clock_actspelltimers"
+                        android:textSize="26dp"
+                        android:singleLine="true"
+                        android:gravity="center"
+                        android:background="#64232323"
+                        android:textColor="#d5d5d5"
+                        android:layout_alignLeft="@+id/img_cleanse_actspelltimers"
+                        android:layout_alignRight="@+id/img_cleanse_actspelltimers"
+                        android:layout_alignTop="@+id/img_cleanse_actspelltimers"
+                        android:layout_alignBottom="@+id/img_cleanse_actspelltimers"
+                        android:visibility="gone" />
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageViewFlash"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/LinearLayoutFlash"
+                android:layout_toRightOf="@+id/LinearLayoutFlash"
+                android:layout_alignBottom="@+id/LinearLayoutFlash"
+                android:layout_alignParentEnd="true"
+                android:alpha="0.1"
+                android:src="@drawable/flash" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageViewIgnite"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/LinearLayoutIgnite"
+                android:layout_toRightOf="@+id/LinearLayoutIgnite"
+                android:layout_alignBottom="@+id/LinearLayoutIgnite"
+                android:layout_alignParentEnd="true"
+                android:alpha="0.1"
+                android:src="@drawable/ignite" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageViewHeal"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/LinearLayoutHeal"
+                android:layout_toRightOf="@+id/LinearLayoutHeal"
+                android:layout_alignBottom="@+id/LinearLayoutHeal"
+                android:layout_alignParentEnd="true"
+                android:alpha="0.1"
+                android:src="@drawable/heal" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageViewTeleport"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/LinearLayoutTeleport"
+                android:layout_toRightOf="@+id/LinearLayoutTeleport"
+                android:layout_alignBottom="@+id/LinearLayoutTeleport"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/teleport"
+                android:alpha="0.1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageViewGhost"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/LinearLayoutGhost"
+                android:layout_toRightOf="@+id/LinearLayoutGhost"
+                android:layout_alignBottom="@+id/LinearLayoutGhost"
+                android:layout_alignParentEnd="true"
+                android:alpha="0.1"
+                android:src="@drawable/ghost" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageViewExhaust"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/LinearLayoutExhaust"
+                android:layout_toRightOf="@+id/LinearLayoutExhaust"
+                android:layout_alignBottom="@+id/LinearLayoutExhaust"
+                android:layout_alignParentEnd="true"
+                android:alpha="0.1"
+                android:src="@drawable/exhaust" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageViewBarrier"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/LinearLayoutBarrier"
+                android:layout_toRightOf="@+id/LinearLayoutBarrier"
+                android:layout_alignBottom="@+id/LinearLayoutBarrier"
+                android:layout_alignParentEnd="true"
+                android:alpha="0.1"
+                android:src="@drawable/barrier" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ImageViewCleanse"
+                android:scaleType="centerCrop"
+                android:layout_alignTop="@+id/LinearLayoutCleanse"
+                android:layout_toRightOf="@+id/LinearLayoutCleanse"
+                android:layout_alignBottom="@+id/LinearLayoutCleanse"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/cleanse"
+                android:alpha="0.1" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_flashcancel_actspelltimers"
+                android:background="@drawable/ic_stopwatch"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_alignParentTop="false"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/LinearLayoutFlash"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_ignitecancel_actspelltimers"
+                android:background="@drawable/ic_stopwatch"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/LinearLayoutIgnite"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_healcancel_actspelltimers"
+                android:background="@drawable/ic_stopwatch"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/LinearLayoutHeal"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_teleportcancel_actspelltimers"
+                android:background="@drawable/ic_stopwatch"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/LinearLayoutTeleport"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_ghostcancel_actspelltimers"
+                android:background="@drawable/ic_stopwatch"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/LinearLayoutGhost"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_exhaustcancel_actspelltimers"
+                android:background="@drawable/ic_stopwatch"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/LinearLayoutExhaust"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_barriercancel_actspelltimers"
+                android:background="@drawable/ic_stopwatch"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/LinearLayoutBarrier"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="10dp" />
+
+            <Button
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:id="@+id/btn_cleansecancel_actspelltimers"
+                android:background="@drawable/ic_stopwatch"
+                android:textColor="#ffffff"
+                android:textSize="14dp"
+                android:textStyle="bold"
+                android:layout_alignParentRight="false"
+                android:layout_alignParentEnd="true"
+                android:layout_alignTop="@+id/LinearLayoutCleanse"
+                android:layout_marginTop="22dp"
+                android:layout_marginRight="10dp" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

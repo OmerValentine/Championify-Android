@@ -1,0 +1,333 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.championify.championify.CountersActivity">
+
+    <RelativeLayout
+        tools:context="net.championify.championify.BuildsActivity"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#d5d5d5" >
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/img_championbig_actcounters"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:scaleType="centerCrop"
+            android:alpha="0"
+            android:layout_alignBottom="@+id/RelativeLayout" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:id="@+id/RelativeLayout"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:background="#64232323" >
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:background="#e6232323"
+            android:id="@+id/RelativeLayout2"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginLeft="10dp">
+
+            <ImageView
+                android:layout_width="105dp"
+                android:layout_height="185dp"
+                android:id="@+id/imageView"
+                android:background="#d79e3b" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:id="@+id/imageView2"
+                android:background="#232323"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:layout_alignRight="@+id/img_champion_actcounters"
+                android:layout_alignEnd="@+id/img_champion_actcounters" />
+
+            <ImageView
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:adjustViewBounds="true"
+                android:id="@+id/img_champion_actcounters"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:background="#232323"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:alpha="0" />
+
+            <Button
+                android:layout_width="100dp"
+                android:layout_height="180dp"
+                android:text="@string/btn_view_champion_skins"
+                android:id="@+id/btn_view_champion_skins"
+                android:layout_alignBottom="@+id/img_champion_actcounters"
+                android:layout_alignTop="@+id/img_champion_actcounters"
+                android:layout_marginLeft="2.5dp"
+                android:layout_marginTop="2.5dp"
+                android:background="#00ffffff" />
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#e6232323"
+            android:paddingEnd="6dp"
+            android:paddingStart="6dp"
+            android:layout_alignBottom="@+id/img_championbig_actcounters"
+            android:layout_toRightOf="@+id/RelativeLayout2"
+            android:layout_toEndOf="@+id/RelativeLayout2"
+            android:layout_marginLeft="10dp"
+            android:layout_marginBottom="10dp"
+            android:paddingTop="3dp"
+            android:paddingBottom="3dp"
+            android:id="@+id/LinearLayout">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_champion_name_actbuilds"
+                android:id="@+id/tv_champion_name_actcounters"
+                android:textColor="#d79e3b"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textAllCaps="false"
+                android:layout_marginTop="-6dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_champion_title_actbuilds"
+                android:id="@+id/tv_champion_title_actcounters"
+                android:textColor="#b7b7b7"
+                android:textSize="14dp"
+                android:textIsSelectable="false"
+                android:textStyle="italic"
+                android:layout_marginTop="-5dp"
+                android:lineSpacingExtra="-5dp"
+                android:singleLine="false" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-2dp">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_champion_primaryrole_actbuilds"
+                    android:textColor="#b7b7b7"
+                    android:textSize="10dp"
+                    android:textIsSelectable="false"
+                    android:textStyle="italic"
+                    android:singleLine="false"
+                    android:id="@+id/tv_champion_primaryrole_actcounters"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_champion_secondaryrole_actbuilds"
+                    android:textColor="#b7b7b7"
+                    android:textSize="10dp"
+                    android:textIsSelectable="false"
+                    android:textStyle="italic"
+                    android:singleLine="false"
+                    android:id="@+id/tv_champion_secondaryrole_actcounters"
+                    android:layout_weight="1" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/img_championbig_actcounters"
+            android:layout_toRightOf="@+id/RelativeLayout2"
+            android:layout_toEndOf="@+id/RelativeLayout2"
+            android:layout_alignBottom="@+id/RelativeLayout2"
+            android:id="@+id/LinearLayout2"
+            android:layout_marginBottom="15dp">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/btn_champion_role_top_actcounters"
+                android:id="@+id/btn_champion_role_top_actcounters"
+                android:layout_weight="1"
+                android:background="#232323"
+                android:textColor="#006e9e"
+                android:textSize="10dp"
+                android:layout_marginLeft="2dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/btn_champion_role_jungle_actcounters"
+                android:id="@+id/btn_champion_role_jungle_actcounters"
+                android:layout_weight="1"
+                android:background="#232323"
+                android:textColor="#006e9e"
+                android:textSize="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/btn_champion_role_mid_actcounters"
+                android:id="@+id/btn_champion_role_mid_actcounters"
+                android:layout_weight="1"
+                android:background="#232323"
+                android:textColor="#006e9e"
+                android:textSize="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/btn_champion_role_support_actcounters"
+                android:id="@+id/btn_champion_role_support_actcounters"
+                android:layout_weight="1"
+                android:background="#232323"
+                android:textColor="#006e9e"
+                android:textSize="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_marginTop="5dp" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:text="@string/btn_champion_role_adc_actcounters"
+                android:id="@+id/btn_champion_role_adc_actcounters"
+                android:layout_weight="1"
+                android:background="#232323"
+                android:textColor="#006e9e"
+                android:textSize="10dp"
+                android:layout_marginLeft="1dp"
+                android:layout_marginRight="2dp"
+                android:layout_marginTop="5dp" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_counters_list_empty_view_actcounters"
+            android:id="@+id/tv_counters_list_empty_view_actbuilds"
+            android:textColor="#006e9e"
+            android:textStyle="italic"
+            android:textSize="14dp"
+            android:gravity="center"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="150dp" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/RelativeLayout2"
+            android:layout_marginTop="25dp"
+            android:id="@+id/LinearLayout3">
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_champion_counters_strongagainst"
+                android:scrollbars="vertical"
+                android:scrollbarThumbVertical="@drawable/custom_scroll_thumb_style"
+                android:scrollbarTrackVertical="@drawable/custom_scroll_track_style"
+                android:scrollbarSize="5dp"
+                android:visibility="gone" />
+
+            <android.support.v7.widget.RecyclerView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/rv_champion_counters_weakagainst"
+                android:scrollbars="vertical"
+                android:scrollbarThumbVertical="@drawable/custom_scroll_thumb_style"
+                android:scrollbarTrackVertical="@drawable/custom_scroll_track_style"
+                android:scrollbarSize="5dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+        <RadioGroup
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/LinearLayout2"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="-10dp"
+            android:id="@+id/rg_strong_weak_actcounters">
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_strong_against_actcounters"
+                android:id="@+id/rb_strong_against_actcounters"
+                android:checked="false"
+                android:textSize="14dp" />
+
+            <RadioButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/rb_weak_against_actcounters"
+                android:id="@+id/rb_weak_against_actcounters"
+                android:checked="false"
+                android:textSize="14dp" />
+        </RadioGroup>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center">
+
+        <android.support.v7.widget.RecyclerView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/rv_champion_image_actcounters"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:visibility="gone"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentEnd="true"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+</RelativeLayout>

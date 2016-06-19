@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#232323">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout">
+
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="180dp"
+            android:id="@+id/img_champion_fragbanrates"
+            android:background="#232323" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="5dp"
+            android:id="@+id/LinearLayout2">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_champion_name_fragbanrates"
+                android:id="@+id/tv_champion_name_fragbanrates"
+                android:textAllCaps="true"
+                android:textSize="26dp"
+                android:textColor="#d79e3b"
+                android:textStyle="bold"
+                android:layout_marginTop="-5dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/tv_champion_role_fragbanrates"
+                android:id="@+id/tv_champion_role_fragbanrates"
+                android:textAllCaps="true"
+                android:textSize="20dp"
+                android:textColor="#006e9e"
+                android:textStyle="italic"
+                android:layout_marginTop="-8dp" />
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="90dp"
+                android:gravity="right"
+                android:layout_marginTop="10dp"
+                android:id="@+id/LinearLayout3">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_champion_banrate_fragbanrates"
+                    android:id="@+id/tv_champion_banrate_fragbanrates"
+                    android:textColor="#009e6f"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:gravity="right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_champion_winrate_fragbanrates"
+                    android:id="@+id/tv_champion_winrate_fragbanrates"
+                    android:textColor="#009e6f"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-10dp"
+                    android:gravity="right" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_champion_playrate_fragbanrates"
+                    android:id="@+id/tv_champion_playrate_fragbanrates"
+                    android:textColor="#009e6f"
+                    android:textSize="26dp"
+                    android:textStyle="bold"
+                    android:layout_marginTop="-10dp"
+                    android:gravity="right" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="143dp"
+                android:layout_marginTop="-73dp"
+                android:id="@+id/LinearLayout4">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_banrate_fragbanrates"
+                    android:id="@+id/tv_banrate_fragbanrates"
+                    android:textColor="#b7b7b7"
+                    android:textSize="14dp"
+                    android:textStyle="italic"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_winrate_fragbanrates"
+                    android:id="@+id/tv_winrate_fragbanrates"
+                    android:textColor="#b7b7b7"
+                    android:textSize="14dp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="true" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/tv_playrate_fragbanrates"
+                    android:id="@+id/tv_playrate_fragbanrates"
+                    android:textColor="#b7b7b7"
+                    android:textSize="14dp"
+                    android:textStyle="italic"
+                    android:layout_marginTop="6dp"
+                    android:singleLine="true" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/LinearLayout5"
+        android:layout_alignBottom="@+id/LinearLayout"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="-5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_kda_fragbanrates"
+            android:id="@+id/tv_kda_fragbanrates"
+            android:textSize="14dp"
+            android:textColor="#b7b7b7"
+            android:textStyle="italic"
+            android:layout_marginRight="5dp"
+            android:layout_marginBottom="5dp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tv_champion_kda_fragbanrates"
+            android:id="@+id/tv_champion_kda_fragbanrates"
+            android:textColor="#006e9e"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp" />
+    </LinearLayout>
+
+</RelativeLayout>

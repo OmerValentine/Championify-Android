@@ -1,0 +1,22 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="net.championify.championify.BansFragment"
+    android:background="#232323">
+
+    <!-- TODO: Update blank fragment layout -->
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rv_banratesinfo"
+        android:scrollbars="vertical"
+        android:scrollbarThumbVertical="@drawable/custom_scroll_thumb_style"
+        android:scrollbarTrackVertical="@drawable/custom_scroll_track_style"
+        android:scrollbarSize="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+</RelativeLayout>

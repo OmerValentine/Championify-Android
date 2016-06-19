@@ -1,0 +1,70 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="net.championify.championify.TabsActivity">
+
+    <item
+        android:id="@+id/action_donate"
+        android:orderInCategory="10"
+        android:title="@string/action_donate"
+        android:icon="@drawable/ic_donate"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_spelltimers"
+        android:orderInCategory="100"
+        android:title="@string/action_spelltimers"
+        android:icon="@drawable/ic_stopwatch"
+        app:showAsAction="always" />
+
+    <item
+        android:id="@+id/action_na"
+        android:title="@string/tv_server_na_menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_euw"
+        android:title="@string/tv_server_euw_menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_eune"
+        android:title="@string/tv_server_eune_menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_lan"
+        android:title="@string/tv_server_lan_menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_las"
+        android:title="@string/tv_server_las_menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_b"
+        android:title="@string/tv_server_br_menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_t"
+        android:title="@string/tv_server_tr_menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_r"
+        android:title="@string/tv_server_ru_menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_o"
+        android:title="@string/tv_server_oce_menu"
+        app:showAsAction="never"/>
+
+    <item
+        android:id="@+id/action_j"
+        android:title="@string/tv_server_jp_menu"
+        app:showAsAction="never"/>
+
+</menu>
